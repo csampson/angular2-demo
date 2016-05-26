@@ -8,9 +8,9 @@ const helpers           = require('./webpack.helpers');
 
 module.exports = {
   entry: {
-    'polyfills' : './src/app.polyfills.js',
-    'vendor'    : './src/app.vendor.js',
-    'app'       : './src/app.main.js'
+    'polyfills' : './src/polyfills.js',
+    'vendor'    : './src/vendor.js',
+    'app'       : './src/app.js'
   },
 
   module: {
@@ -37,7 +37,7 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      template: 'src/index.html'
+      template: 'src/app.html'
     })
   ]
 };

@@ -1,11 +1,9 @@
-'use strict';
-
 import { Component } from '@angular/core';
-import './app.css';
+import '../../app.css';
 
 @Component({
   selector : 'app',
   template : require('./app.component.html'),
   styles   : [require('./app.component.css')]
 })
-export default class AppComponent { }
+export class AppComponent { }
